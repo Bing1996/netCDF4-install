@@ -18,13 +18,11 @@ This project allows users to install netCDF4.5.0 automaticly, this version only 
 ### automatic install
 
 * **install.sh**
-
     ```shell
     git clone https://github.com/Bing1996/netCDF4-install.git
     cd netCDF4-install.git
     sudo bash install.sh
     ```
-
 ### manual install
 
 This section for users who want to install seprately. Three libraries rquired and netCDF4-C and netCDF4-Fortran mentioned in the section 2 will be installed.
@@ -32,7 +30,6 @@ This section for users who want to install seprately. Three libraries rquired an
 *Note:netCDF4-Fortran cannot be installed until netCDF4-C has been installed and compiled successfully!*
 
 * **zlib-1.2.11**
-
     ```shell
     tar -zxvf zlib-1.2.11.tar.gz
     cd zlib-1.2.11
@@ -41,9 +38,7 @@ This section for users who want to install seprately. Three libraries rquired an
     sudo make check             # check environment
     sudo make isntall
     ```
-
-* **curl-7.57.0**
-    
+* **curl-7.57.0**  
     ```shell
     tar -zxvf curl-7.57.0.tar.gz
     cd curl-7.57.0
@@ -52,9 +47,7 @@ This section for users who want to install seprately. Three libraries rquired an
     sudo make check             
     sudo make isntall
     ```
-
 * **hdf5-1.10.3**
-
     ```shell
     tar -zxvf hdf5-1.10.3tar.gz
     cd hdf5-1.10.3
@@ -63,9 +56,7 @@ This section for users who want to install seprately. Three libraries rquired an
     sudo make check             
     sudo make isntall
     ```
-
 * **netCDF4**
-
     ```shell
     tar -zxvf v4.5.0.tar.gz
     cd netcdf-c-4.5.0
@@ -75,11 +66,8 @@ This section for users who want to install seprately. Three libraries rquired an
     sudo make check             
     sudo make isntall
     ```
-
 * **netCDF4-fortran**
-
     First make sure the netCDF C library has been built, tested, and installed. The shell variable NCDIR should be set such that the shared library for netCDF C is under \${NCDIR}/lib and netCDF utilities such as ncdump are under \${NCDIR}/bin.
-
     ```shell
     tar -zxvf v4.4.0.tar.gz
     cd netcdf-fortran-4.4.0
@@ -91,27 +79,20 @@ This section for users who want to install seprately. Three libraries rquired an
     sudo make isntall
     ```
     If the netCDF C library was installed as a shared library in a location that is not searched by default, you will need to set the LD_LIBRARY_PATH environment variable (or DYLD_LIBRARY_PATH on OSX) to specify that directory before running the configure script.
-
     ```shell
     export LD_LIBRARY_PATH=${NCDIR}/lib:${LD_LIBRARY_PATH}
     ```
-
 ## 4.**Some error encountet**
-* *Missing c++ enssential library while installing hdf5 lib*
-    
+* *Missing c++ enssential library while installing hdf5 lib*    
     ```shell
     sudo apt install build-essential
     sudo apt install g++
-    ```
-    
+    ```   
 * *Missing m4 library while installing netCDF4-C lib*
-
     ```
     sudo apt install m4
     ```
-
 * *Undefined __netCDF__MOD_nf_open()*
-
     ```shell
     export LD_LIBRARY_PATH=${NCDIR}/lib:${LD_LIBRARY_PATH}
     ```
