@@ -82,7 +82,7 @@ This section for users who want to install seprately. Three libraries rquired an
     ```shell
     export LD_LIBRARY_PATH=${NCDIR}/lib:${LD_LIBRARY_PATH}
     ```
-## 4.**Some error encountet**
+## 4.**Some error encounter**
 * *Missing c++ enssential library while installing hdf5 lib*    
     ```shell
     sudo apt install build-essential
