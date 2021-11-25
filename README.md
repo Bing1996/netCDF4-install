@@ -72,7 +72,6 @@ This section for users who want to install seprately. Three libraries rquired an
     tar -zxvf v4.4.0.tar.gz
     cd netcdf-fortran-4.4.0
     NFDIR=/usr/local
-    NFDIR=/usr/local
     CPPFLAGS=-I${NCDIR}/include LDFLAGS=-L${NCDIR}/lib \
     ./configure --prefix=${NFDIR}
     sudo make check             
